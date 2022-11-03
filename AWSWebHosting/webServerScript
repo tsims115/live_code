@@ -2,4 +2,9 @@
 sudo apt update -y
 sudo apt install apache2 -y
 yes | sudo ufw enable
+sudo ufw allow ssh
 sudo ufw allow 'apache'
+sudo git clone https://github.com/tsims115/Portfolio.git
+sudo chmod a+w /var/www/html/index.html
+sudo rm /var/www/html/index.html
+sudo cp -a Portfolio/. /var/www/html
