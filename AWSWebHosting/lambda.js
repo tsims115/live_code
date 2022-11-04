@@ -1,8 +1,8 @@
 var AWS = require('aws-sdk');
 var ses = new AWS.SES({ region: "us-east-1" });
 
-var RECEIVER = '3594@holbertonstudents.com';
-var SENDER = 'sesmailsender@trentonsims.net';
+var RECEIVER = '';
+var SENDER = '';
 
 exports.handler = async function (event, context) {
     console.log('Received event:', event);
